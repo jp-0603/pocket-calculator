@@ -1,13 +1,63 @@
 body {
-  background-color: lightblue;
+  background-color: #003366;
+}
+.allButtons{
+  background-color: #013220;
+  border: 4px solid white;
+  border-radius: 200px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
 }
 .allButtons {
-  height:175px;
-  width:150px;
+  height:125px;
+  width:125px;
   font-size: 48px;
+}
+button:hover{
+  background-color: orange;
+  color: white;
+  transition: 0.5s;
 }
 .onerow{
 position: absolute;
-  left:100px
-  top: 100px
+  top: 100px;
+}
+.tworow{
+  position: absolute;
+  top:255px;
+}
+.threerow{
+  position: absolute;
+  top: 335px;
+}
+.fourrow{
+  position: absolute;
+  top:490px;
+}
+.fiverow{
+  position: absolute;
+  top:645px;
+}
+.oneColumn{
+  position: absolute;
+  left:355px
+}
+.twoColumn{
+  position: absolute;
+  left:500px
+}
+.threeColumn{
+  position: absolute;
+  left:645px
+}
+.fourColumn{
+  position: absolute;
+  left:790px
+}
+#zero{
+  width:300px;
 }
