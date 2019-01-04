@@ -1,0 +1,13 @@
+body {
+  background-color: lightblue;
+}
+.allButtons {
+  height:175px;
+  width:150px;
+  font-size: 48px;
+}
+.onerow{
+position: absolute;
+  left:100px
+  top: 100px
+}
