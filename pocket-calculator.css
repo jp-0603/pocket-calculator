@@ -1,5 +1,6 @@
 body {
-  background-color: #003366;
+  /*background-color: #003366;*/
+  background-image: url(V8qr.gif);
 }
 .allButtons{
   background-color: #013220;
@@ -69,4 +70,6 @@ position: absolute;
   border: 4px solid green;
   font-size: 70px;
   text-align: right;
+  background-image: url(tenor.gif);
+  color:white;
 }

@@ -13,13 +13,13 @@
 <form name="calc">
  <input name="display" disabled>
 </form>
-   <button class="allButtons onerow oneColumn" onclick="display(ac)"> AC </button>
+   <button class="allButtons onerow oneColumn" onclick="display('allClear')"> AC </button>
 
    <button class="allButtons onerow twoColumn" onclick="display(+/-)"> +/- </button>
 
    <button class="allButtons onerow threeColumn" onclick="percent(%)">% </button>
 
-   <button class="allButtons onerow fourColumn" onclick="divison()"> ÷ </button>
+   <button class="allButtons onerow fourColumn" onclick="divison('/')"> ÷ </button>
 
    <button class="allButtons tworow oneColumn" onclick="display(7)"> 7 </button>
 
@@ -27,7 +27,7 @@
 
    <button class="allButtons tworow threeColumn" onclick="display(9)"> 9 </button>
 
-   <button class="allButtons tworow fourColumn" onclick="display(x)"> x </button>
+   <button class="allButtons tworow fourColumn" onclick="display('*')"> x </button>
 
    <button class="allButtons threerow oneColumn" onclick="display(4)"> 4 </button>
 
@@ -35,7 +35,7 @@
 
    <button class="allButtons threerow threeColumn" onclick="display(6)"> 6 </button>
 
-   <button class="allButtons threerow fourColumn" onclick="display(-)"> - </button>
+   <button class="allButtons threerow fourColumn" onclick="display('-')"> - </button>
 
    <button class="allButtons fourrow oneColumn" onclick="display(1)"> 1 </button>
 
@@ -43,7 +43,7 @@
 
    <button class="allButtons fourrow threeColumn" onclick="display(3)"> 3 </button>
 
-   <button class="allButtons fourrow fourColumn" onclick="display(+)"> + </button>
+   <button class="allButtons fourrow fourColumn" onclick="display('+')"> + </button>
 
    <button class="allButtons fiverow oneColumn" id="zero" onclick="display(0)"> 0 </button>
 
