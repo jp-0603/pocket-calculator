@@ -5,48 +5,54 @@
 
   <title> Welcome to Pocket Calculator </title>
   <link rel="stylesheet" type="text/css" href="pocket-calculator.css">
-  <script type="text/javascript" src="pocket-calculator"></script>
+  <script type="text/javascript" src="pocket-calculator.js"></script>
+
 </head>
 
  <body>
+<div class=calculator>
+  <form name="calc">
+      <input name="display" disabled>
+  </form>
+</div>
 
-   <button class="allButtons onerow oneColumn" onclick="allClear()"> AC </button>
+   <button id="clearButton" class="allButtons onerow oneColumn" onclick="clearCalc()">AC </button>
 
-   <button class="allButtons onerow twoColumn" onclick="plusMinus()"> +/- </button>
+   <button id="negationButton" class="allButtons onerow twoColumn" onclick="numberNegation();"> +/- </button>
 
-   <button class="allButtons onerow threeColumn" onclick="percent()">% </button>
+   <button id="percentageButton" class="allButtons onerow threeColumn" onclick="numberPercentage();">% </button>
 
-   <button class="allButtons onerow fourColumn" onclick="divison()"> ÷ </button>
+   <button id="divisionButton" class="allButtons onerow fourColumn" onclick="display('/'); clearOperator();"> ÷ </button>
 
-   <button class="allButtons tworow oneColumn" onclick="seven()"> 7 </button>
+   <button id="button7" class="allButtons tworow oneColumn" onclick="display(7)"> 7 </button>
 
-   <button class="allButtons tworow twoColumn" onclick="eight()"> 8 </button>
+   <button id="button8" class="allButtons tworow twoColumn" onclick="display(8)"> 8 </button>
 
-   <button class="allButtons tworow threeColumn" onclick="nine()"> 9 </button>
+   <button id="button9" class="allButtons tworow threeColumn" onclick="display(9)"> 9 </button>
 
-   <button class="allButtons tworow fourColumn" onclick="multiply()"> x </button>
+   <button id="multiplcationButton" class="allButtons tworow fourColumn" onclick="display('*'); clearOperator();"> x </button>
 
-   <button class="allButtons threerow oneColumn" onclick="four()"> 4 </button>
+   <button id="button4" class="allButtons threerow oneColumn" onclick="display(4)"> 4 </button>
 
-   <button class="allButtons threerow twoColumn" onclick="five()"> 5 </button>
+   <button id="button5" class="allButtons threerow twoColumn" onclick="display(5)"> 5 </button>
 
-   <button class="allButtons threerow threeColumn" onclick="six()"> 6 </button>
+   <button id="button6" class="allButtons threerow threeColumn" onclick="display(6)"> 6 </button>
 
-   <button class="allButtons threerow fourColumn" onclick="subtract()"> - </button>
+   <button id="subtractButtton" class="allButtons threerow fourColumn" onclick="display('-'); clearOperator();"> - </button>
 
-   <button class="allButtons fourrow oneColumn" onclick="one()"> 1 </button>
+   <button id="button1" class="allButtons fourrow oneColumn" onclick="display(1)"> 1 </button>
 
-   <button class="allButtons fourrow twoColumn" onclick="two()"> 2 </button>
+   <button id="button2" class="allButtons fourrow twoColumn" onclick="display(2)"> 2 </button>
 
-   <button class="allButtons fourrow threeColumn" onclick="three()"> 3 </button>
+   <button id="button3" class="allButtons fourrow threeColumn" onclick="display(3)"> 3 </button>
 
-   <button class="allButtons fourrow fourColumn" onclick="add()"> + </button>
+   <button id="addButton" class="allButtons fourrow fourColumn" onclick="display('+'); clearOperator();"> + </button>
 
-   <button class="allButtons fiverow oneColumn" id="zero" onclick="zero()"> 0 </button>
+   <button id="zero" class="allButtons fiverow oneColumn" onclick="display(0)"> 0 </button>
 
-   <button class="allButtons fiverow threeColumn" onclick="decimal()"> . </button>
+   <button id="decimalButton" class="allButtons fiverow threeColumn" onclick="displayDecimal('.');"> . </button>
 
-   <button class="allButtons fiverow fourColumn" onclick="equal()"> = </button>
+   <button id="equalButton" class="allButtons fiverow fourColumn" onclick="equal('=')"> = </button>
 
 </body>
 

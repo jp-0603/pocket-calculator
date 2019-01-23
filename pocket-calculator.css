@@ -8,14 +8,12 @@ body {
   color: white;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
   display: inline-block;
   font-size: 16px;
-}
-.allButtons {
   height:125px;
   width:125px;
   font-size: 48px;
+  font:helvetica;
 }
 button:hover{
   background-color: orange;
@@ -24,40 +22,59 @@ button:hover{
 }
 .onerow{
 position: absolute;
-  top: 100px;
+  top: 150px;
 }
 .tworow{
   position: absolute;
-  top:255px;
+  top:305px;
 }
 .threerow{
   position: absolute;
-  top: 335px;
+  top: 450px;
 }
 .fourrow{
   position: absolute;
-  top:490px;
+  top:590px;
 }
 .fiverow{
   position: absolute;
-  top:645px;
+  top:745px;
 }
 .oneColumn{
   position: absolute;
-  left:355px
+  left:355px;
 }
 .twoColumn{
   position: absolute;
-  left:500px
+  left:500px;
 }
 .threeColumn{
   position: absolute;
-  left:645px
+  left:645px;
 }
 .fourColumn{
   position: absolute;
-  left:790px
+  left:790px;
 }
 #zero{
   width:250px;
 }
+input{
+position: absolute;
+  top: 40px;
+  left: 370px;
+  width: 525px;
+  height: 75px;
+  border-radius: 20px;
+  border: 4px solid green;
+  font-size: 70px;
+  text-align: right;
+  background-image: url(tenor.gif);
+  color:white;
+}
+/*function display(num) {
+ document.calc.display.value = document.calc.display.value + num;
+}
+//function equal() {
+//let equation = eval(document.calc.display.value)
+//document.calc.display.value = equation */
